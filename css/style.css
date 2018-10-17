@@ -1,23 +1,19 @@
 body {
   background-color: #dadada;
   font-size: 10px;
-  display:block;
-  font-family: Monaco, monospace, sans-serif;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 @media screen and (min-width: 575px) {
    body {
-    margin-right: 6em;
-    margin-left: 6em;
+    margin-right: 60px;
+    margin-left: 60px;
   }
 }
 
 @media screen and (min-width: 991px) {
   body {
-    margin-right: 8em;
-    margin-left: 8em;
+    margin-right: 80px;
+    margin-left: 80px;
   }
 }
 
@@ -27,73 +23,67 @@ body {
 
 .container {
   width: 100%;
-  margin-top: 3em;
 }
-
 
 h1 {
+  font-size: 1.5em;
+}
+
+.container > h1:first-of-type {
+  margin: 30px;
   font-size: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', Monaco, sans-serif;
 }
 
-h1.emphasis {
-  margin: 3em;
-}
-
-div {
+.preview {
+  font-size: 1.5em;
+  text-align: left;
+  font-family: Times-Roman, serif;
+  text-transform: none;
+  padding: 10% 0 0 10%;
+  margin: 0 0 20px 0;
   width: 100%;
-  float: left;
-  padding: 10% 90% 59% 10%;
-  background position: top;
-  margin-bottom: 2em;
+  display: inline-block;
+  height: 300px;
 }
 
 @media screen and (min-width: 575px){
-   div {
+   .preview {
     margin: 1%;
     width: 48%;
-    padding: 5% 43% 43% 5%;
+    padding: 8% 0 0 8%;
+    float: left;
   }
 }
 
 @media screen and (min-width: 991px){
-   div {
+   .preview {
     margin: 1%;
     width: 23%;
-    padding: 2.5% 20.5% 20.5% 2.5%;
+    padding: 4% 0 0 4%;
+    float: left;
   }
-}
-
-.preview {
-  text-align: left;
-  font-size: 1.6em;
-  font-family: serif;
-  text-transform: none;
 }
 
 .baku {
   background: #fff url('../images/baku.jpg') no-repeat top center;
   background-size: cover;
-  height: auto;
-/*  padding: 10% 90% 59% 10%;*/
 }
 
 .london {
-  background: #fff url('../images/london.png') no-repeat top center;
+  background: #fff url('../images/london.png') no-repeat top right;
   background-size: cover;
-  height: auto;
-/*  padding: 10% 90% 59% 10%;*/
 }
 
 .madrid {
-  background: #fff url('../images/madrid.jpg') no-repeat top center;
+  background: #fff url('../images/madrid.jpg') no-repeat top left;
+  background-position:
   background-size: cover;
-  height: auto;
-/*  padding: 10% 90% 59% 10%;*/
 }
 
 .rome {
   background: #fff url('../images/rome.jpg') no-repeat top center;
   background-size: cover;
-  height: auto;
-/*  padding: 10% 90% 59% 10%;*/
 }
